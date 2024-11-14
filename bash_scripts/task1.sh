@@ -7,3 +7,9 @@ echo "The number is even"
 else 
 echo "The number is odd"
 fi 
+
+#Loop 12345 times
+for i in {1..10}
+do
+   echo "Welcome $i times"
+done
