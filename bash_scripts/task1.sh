@@ -1,15 +1,13 @@
 #!/bin/bash
-#checks if the number is positive, negative or zero
-read -p "Enter a number: " number
-if [ $((number % 2)) -eq 0 ];
-then 
-echo "The number is even"
-else 
-echo "The number is odd"
-fi 
+#print only even numbers from 1-10
 
-#Loop 12345 times
-for i in {1..10}
+echo "Number :"
+read num;
+
+for (( i = 1; i <= $num; i++ ))
 do
-   echo "Welcome $i times"
+   if [ $(($i % 2)) -eq 0 ]
+   then
+        echo $i
+   fi
 done
