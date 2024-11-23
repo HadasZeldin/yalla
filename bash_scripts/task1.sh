@@ -1,4 +1,31 @@
 #!/bin/bash
+#my favorite flavor
+while true; do
+read -p "What's your favorite flavor? (Spicy, Sweet, Salty, Sour): " FLAVOR
+case "$FLAVOR" in 
+Spicy) 
+echo "Delicious!"
+break
+;;
+Sweet)
+echo "Very nice!"
+break 
+;;
+Salty)
+echo "Bad choice!"
+break 
+;;
+Sour)
+echo "Don't like that"
+break 
+;;
+*)
+echo "Invalid choice"
+esac
+done 
+
+
+
 #Are you bored
 while true; do
 read -p "Are you bored? (1=YES; 2=NO): " ANSWER
