@@ -30,6 +30,10 @@ done
 
 #4. Sum of N Numbers
 #Write a script that asks the user for N numbers and calculates their sum.
+read -p "Enter a number " NUM
+read -p "Enter a 2nd number " NUM2
+RESULT=$(( $NUM + $NUM2 ))
+echo "The result of $NUM + $NUM2 is: $RESULT"
 
 
 #5. File Size Checker
