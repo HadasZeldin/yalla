@@ -9,7 +9,7 @@ jobs:
       - name: Checkout code
         run: git clone https://github.com/HadasZeldin/yalla  # Gets the latest code, in other words it does 'git clone'
       - name: Ping google.com
-        run: ping -c 4 google.com
+        run: ping -c 4 google.com || { echo "Ping failed"; exit 1; }
       - name: the ls-la command
         run: ls -la
       
