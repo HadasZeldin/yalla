@@ -8,7 +8,8 @@ jobs:
     steps:
       - name: Checkout code
         run: git clone https://github.com/HadasZeldin/yalla  # Gets the latest code, in other words it does 'git clone'
-      - name: the ls-la command
-        run: ls-la
       - name: ping to google
         run: ping -c 4 https://www.google.co.uk/
+      - name: the ls-la command
+        run: ls -la
+      
